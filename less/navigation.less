@@ -1,1 +1,49 @@
 // Navigation Styles here
+
+.topcontainer {
+  border-bottom: 2px dashed lightgrey;
+  width: 100%;
+  //padding: 0 80px;
+
+  .display();
+
+  .top{
+    .display(space-between);
+    // max-width: 65%;
+    height: 9rem;
+    width: 800px;
+    padding: 0 30px;
+
+    @media @phone {
+      justify-content: space-evenly;
+      flex-flow: column;
+      width: 80%;
+    }
+    
+    nav {
+      .display(space-between);
+      max-width: 400px;
+      min-width: 250px;
+
+      @media @phone {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+
+        &:hover {
+          //background: black;
+          .glow();
+          font-size: 2rem;
+          background: @shark;
+          padding: 1%;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
