@@ -3,7 +3,7 @@
 .topcontainer {
   border-bottom: 2px dashed lightgrey;
   width: 100%;
-  padding: 0 5%;
+  //padding: 0 80px;
 
   .display();
 
@@ -12,6 +12,7 @@
     // max-width: 65%;
     height: 9rem;
     width: 800px;
+    padding: 0 30px;
 
     @media @phone {
       justify-content: space-evenly;
@@ -20,9 +21,9 @@
     }
     
     nav {
-      .display();
+      .display(space-between);
       max-width: 400px;
-      min-width: 300px;
+      min-width: 250px;
 
       @media @phone {
         width: 100%;
